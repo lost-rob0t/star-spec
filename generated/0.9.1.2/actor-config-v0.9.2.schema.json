@@ -1,0 +1,99 @@
+{
+  "$comment": "Secrets are referenced, never embedded. Effective quotas are server policy, not schema data.",
+  "$id": "https://spec.starintel.actor/profile/actor-config-v0.9.2.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "one_run": {
+            "const": true
+          }
+        },
+        "required": [
+          "one_run"
+        ]
+      },
+      "then": {
+        "properties": {
+          "max_runs": {
+            "const": 1
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "actor_group": {
+      "enum": [
+        "basic",
+        "plus",
+        "professional",
+        "enterprise"
+      ]
+    },
+    "actor_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "credential_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "hashtag_targets": {
+      "items": {
+        "pattern": "^#?[^\\s#]+$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "max_runs": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "one_run": {
+      "default": false,
+      "type": "boolean"
+    },
+    "parameters": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "profile_targets": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "profile_version": {
+      "const": "0.9.2"
+    },
+    "schedule": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "tenant_id": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "profile_version",
+    "tenant_id",
+    "actor_id",
+    "enabled",
+    "actor_group"
+  ],
+  "title": "StarIntel actor-config profile v0.9.2",
+  "type": "object"
+}

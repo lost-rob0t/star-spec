@@ -1,0 +1,6616 @@
+{
+  "actors": [],
+  "imports": [],
+  "library": {
+    "digest": null,
+    "name": "org.starintel/document@0",
+    "version": "0.9.1.2"
+  },
+  "messages": [],
+  "predicates": [],
+  "types": [
+    {
+      "base": "string",
+      "kind": "scalar",
+      "name": "org.starintel/document@0/actor-config-profile-version",
+      "pattern": "^0\\.9\\.2$"
+    },
+    {
+      "kind": "enum",
+      "name": "org.starintel/document@0/actor-group",
+      "values": [
+        "basic",
+        "plus",
+        "professional",
+        "enterprise"
+      ]
+    },
+    {
+      "fields": [
+        {
+          "name": "id",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "rev",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "aliases",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "assessment",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "attachments",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "dataset",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dateAdded",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dateUpdated",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dtype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "evidence",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "extensions",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "geospatial",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "handling",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "identifiers",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "keywords",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "labels",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "language",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lineage",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "notes",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "provenance",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "quality",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "relatedIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "schemaOrg",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "schemaVersion",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sources",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "summary",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "tags",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "temporal",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "title",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "verification",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "version",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "workflow",
+          "required": false,
+          "type": "map"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/starintel-document",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actor",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "consumerPath",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "countsByDtype",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "documentIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "files",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "generatedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "hashAlgorithm",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "manifestType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recordCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "schemaVersions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "targetOptions",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/actor-manifest-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/actor-manifest-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/actor-manifest",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "address",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "city",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "containedLocationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "countryCode",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "county",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "geohash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lat",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "locationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lon",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "long",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "parentLocationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "postal",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "region",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "street",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "street2",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "timezone",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/address-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/address-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/address",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "acknowledgedBy",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "alertType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "condition",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "severity",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subjectIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "threshold",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "triggeredAt",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/alert-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/alert-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/alert",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "conclusions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "confidence",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "counterarguments",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "findingIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "findings",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "framework",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "inputIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "limitations",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "method",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "question",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recommendations",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "scope",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "unresolved",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/analysis-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/analysis-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/analysis",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "assetType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "bio",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dissolvedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eid",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "etype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "externalIds",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "formerNames",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "foundedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "imageUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "legalName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "logoUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "operatorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "ownerIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "registration",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "serialNumber",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "shortName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "website",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/asset-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/asset-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/asset",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "breachedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dataClasses",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "discoveredAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "organizationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "total",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "url",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "verified",
+          "required": false,
+          "type": "boolean"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/breach-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/breach-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/breach",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "amount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "committeeId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contributionType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "counterpartyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "donorId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "electionCycle",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "entityId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "filingId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "fiscalQuarter",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "fiscalYear",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "instrument",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "methodology",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "percentage",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "periodEnd",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "periodStart",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "qualifications",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "recipientId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "reportedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "unitPrice",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "units",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "valueType",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/campaign-finance-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/campaign-finance-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/campaign-finance",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "adjudication",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "certainty",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "claim",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "claimType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "claimantId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contradictingEvidenceIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "object",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "polarity",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "predicate",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subjectIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "supportingEvidenceIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/claim-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/claim-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/claim",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "broaderIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "criteria",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "definition",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "domain",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "examples",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "narrowerIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "relatedIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "term",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/concept-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/concept-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/concept",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "agencyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "awardId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "awardType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "buyerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ceilingAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "competitionType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contractId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "modifications",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "naics",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "obligatedAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "outlayAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "placeOfPerformance",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "potentialAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "psc",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "recognizedRevenue",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "scope",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sellerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "signedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "solicitationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subcontractorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "vehicleId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "vendorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/contract-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/contract-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/contract",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actor",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "consumerPath",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "countsByDtype",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "documentIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "files",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "generatedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "hashAlgorithm",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "manifestType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recordCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "schemaVersions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "targetOptions",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/dataset-manifest-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/dataset-manifest-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/dataset-manifest",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [],
+      "kind": "document",
+      "name": "org.starintel/document@0/document-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/document-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/document",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "createdAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dnsRecords",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "dnssec",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "domain",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "expiresAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "nameservers",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "record",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recordType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "registrant",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "registrar",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "resolvedAddresses",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "subdomains",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "updatedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "whois",
+          "required": false,
+          "type": "map"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/domain-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/domain-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/domain",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "degree",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "field",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "graduated",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "honors",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "institutionId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "personId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/education-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/education-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/education",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "address",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "domain",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "firstSeen",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lastSeen",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ownerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "verified",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "verifiedAt",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/email-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/email-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/email",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "attachments",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "bcc",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "body",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "cc",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "channel",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "deleted",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "editedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "from",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "group",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "headers",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "isReply",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "links",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "media",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "mentions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "messageId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "platform",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "postedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "reactions",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "replyTo",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subject",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "threadId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "to",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "user",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "userId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "visibility",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/email-message-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/email-message-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/email-message",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "current",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "department",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "employmentType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "organizationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "personId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/employment-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/employment-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/employment",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "bio",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dissolvedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eid",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "etype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "externalIds",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "formerNames",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "foundedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "imageUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "legalName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "logoUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "shortName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "website",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/entity-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/entity-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/entity",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "agenda",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "amount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "caseId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contractId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "decisions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eventKind",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "meetingId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "organizerIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "outcome",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "participantIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "participants",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "sponsorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/event-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/event-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/event",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "attachments",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "chainOfCustody",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "claim",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "collectedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "confidence",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contradicts",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "corroborates",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "evidenceId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "excerpt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "hashAlgorithm",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "kind",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locator",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "metadata",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "notes",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observation",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "page",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "role",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "section",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sourceId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sourceUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "validFrom",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "validTo",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/evidence-record-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/evidence-record-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/evidence-record",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "createdAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "hashAlgorithm",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "mediaType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "modifiedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ownerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sizeBytes",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "uri",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/file-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/file-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/file",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "amount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "counterpartyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "entityId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "fiscalQuarter",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "fiscalYear",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "instrument",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "methodology",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "percentage",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "periodEnd",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "periodStart",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "qualifications",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "reportedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "unitPrice",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "units",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "valueType",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/financial-observation-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/financial-observation-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/financial-observation",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "address",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "city",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "containedLocationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "countryCode",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "county",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "geohash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lat",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "locationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lon",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "long",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "parentLocationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "postal",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "region",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "street",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "street2",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "timezone",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/geo-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/geo-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/geo",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "agencyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "assistanceListing",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "awardId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "awardType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "buyerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ceilingAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "competitionType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contractId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "grantorId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "matchingRequired",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "modifications",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "naics",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "obligatedAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "outlayAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "placeOfPerformance",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "potentialAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "program",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "psc",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "recipientIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "recognizedRevenue",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "scope",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sellerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "signedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "solicitationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subcontractorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "vehicleId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "vendorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/grant-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/grant-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/grant",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "architecture",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "asn",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "certificates",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "deviceType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "domainIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "firstSeen",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "fqdn",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "hostname",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ip",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ipv4",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "ipv6",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "lastSeen",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "mac",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "model",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "networkId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "organization",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "os",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "osVersion",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ports",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "reverseDns",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "services",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "technologies",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "vendor",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "vulnerabilities",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/host-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/host-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/host",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actor",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "breadth",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "delay",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "depth",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "excludedSources",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "hypotheses",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "inScope",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "maxDepth",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "nextRunAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "objectives",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "options",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "outOfScope",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "preferredSources",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "priority",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "query",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recurrence",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recurring",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "requiredDtypes",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "researchQuestion",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "scopeType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "score",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "seedIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "selectionReason",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "sourceIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "targetId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "targetType",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/investigation-target-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/investigation-target-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/investigation-target",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "attorneyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "caseName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "caseNumber",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "caseType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "citation",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "claims",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "closedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "court",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "defendantIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "docketEntries",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "filedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "judgeIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "outcome",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "partyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "plaintiffIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/legal-case-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/legal-case-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/legal-case",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "amendment",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "clientId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "expenses",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "filedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "filingId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "filingType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "governmentEntities",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "income",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "issues",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "lobbyistIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "periodEnd",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "periodStart",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "registrantId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "specificIssues",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "termination",
+          "required": false,
+          "type": "boolean"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/lobbying-filing-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/lobbying-filing-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/lobbying-filing",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "address",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "alt",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "city",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "containedLocationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "countryCode",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "county",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "geohash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lat",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "locationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lon",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "long",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "parentLocationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "postal",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "region",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "state",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "street",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "street2",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "timezone",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/location-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/location-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/location",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "creatorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "durationSeconds",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "license",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "mediaType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "publishedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "publisherId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "transcript",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/media-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/media-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/media",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "agenda",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "amount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "caseId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contractId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "decisions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eventKind",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "meetingId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "organizerIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "outcome",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "participantIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "participants",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "sponsorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/meeting-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/meeting-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/meeting",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "channel",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "deleted",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "editedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "group",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "isReply",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "links",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "media",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "mentions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "messageId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "platform",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "postedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "reactions",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "replyTo",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "threadId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "userId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "visibility",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/message-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/message-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/message",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "asn",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "asnName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "cidr",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "downstreamAsns",
+          "required": false,
+          "type": {
+            "list": "integer"
+          }
+        },
+        {
+          "name": "org",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "peerAsns",
+          "required": false,
+          "type": {
+            "list": "integer"
+          }
+        },
+        {
+          "name": "rangeEnd",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "rangeStart",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "rir",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "routeObjects",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "subnet",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "upstreamAsns",
+          "required": false,
+          "type": {
+            "list": "integer"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/network-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/network-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/network",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "instrument",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "method",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "observerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subjectId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "unit",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "required": false,
+          "type": "map"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/observation-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/observation-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/observation",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "assignments",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "capabilityGaps",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "datasets",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "inScope",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "mission",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "objectives",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "outOfScope",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "phases",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "postActions",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "targetPolicy",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "targets",
+          "required": false,
+          "type": "map"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/operation-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/operation-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/operation",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "affiliateIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "beneficialOwnerIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "bio",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "business",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "directorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dissolvedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eid",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "employeeCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "etype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "exchange",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "executiveIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "externalIds",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "fiscalYearEnd",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "formerNames",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "foundedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "governmentLevels",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "headquarters",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "imageUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "industry",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "legalName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lei",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "logoUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "markets",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "memberIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "mission",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "orgType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ownerIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "parentId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "predecessorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "products",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "reg",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "registrationNumber",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "revenue",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "sectors",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "services",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "shortName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subsidiaryIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "successorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "taxId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ticker",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "website",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/org-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/org-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/org",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "assetId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "beneficial",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "direct",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ownerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ownershipType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "percentage",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "units",
+          "required": false,
+          "type": "decimal"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/ownership-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/ownership-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/ownership",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "associateIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "bio",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "birthplace",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "citizenships",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "contactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "deathDate",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dissolvedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dob",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "educationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "eid",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "emailIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "employers",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "etype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "externalIds",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "familyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "fname",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "formerNames",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "foundedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "fullName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "gender",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "imageUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "legalName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lname",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "logoUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "misc",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "mname",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "nationalities",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "occupations",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "phoneIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "politicalAffiliations",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "positions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "preferredName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "professionalAffiliations",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "pronouns",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "publicRoles",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "shortName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "socialAccountIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "suffix",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "website",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/person-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/person-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/person",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "carrier",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "countryCode",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "extension",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "firstSeen",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lastSeen",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "number",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ownerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "phoneType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "verified",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "verifiedAt",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/phone-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/phone-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/phone",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "affectedIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "effectiveAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "expiresAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "issuerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "policyId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "policyType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "text",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/policy-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/policy-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/policy",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "agencyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "awardId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "awardType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "buyerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "ceilingAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "competitionType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contractId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "modifications",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "naics",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "obligatedAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "outlayAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "placeOfPerformance",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "potentialAmount",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "psc",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "recognizedRevenue",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "scope",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sellerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "signedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "solicitationId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subcontractorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "vehicleId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "vendorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/procurement-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/procurement-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/procurement",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "bio",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "capabilities",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "contactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "customers",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dissolvedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eid",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "endOfLife",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "etype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "externalIds",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "features",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "formerNames",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "foundedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "imageUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "integrations",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "legalName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "license",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "logoUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "manufacturerId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "model",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "pricing",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "productType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "releaseDate",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "shortName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "technical",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "vendorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "versionName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "website",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/product-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/product-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/product",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "active",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "confidence",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "directed",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "endAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "inversePredicate",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "note",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "object",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "predicate",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "qualifiers",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "relationType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "source",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "startAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subject",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "target",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "weight",
+          "required": false,
+          "type": "decimal"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/relation-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/relation-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/relation",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actorIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "actorSelectionRules",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "artifactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "childIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "completedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "counters",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "createdAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currentActorId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "currentRunId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dependencyIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "history",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "inputIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "instructions",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "lastError",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "limits",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "objective",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "outputIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "pausedReason",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "runIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "startedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "stop",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "targetIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/research-node-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/research-node-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/research-node",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "agentIdentity",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "classificationRules",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "completedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "counterevidenceIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "findingIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "findings",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "iteration",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "method",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "narrativeRole",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "researchQuestion",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sourceIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "startedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "supportingRecordIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "unresolvedTargetIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/research-pass-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/research-pass-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/research-pass",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "channel",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "deleted",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "editedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "group",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "isReply",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "likeCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "links",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "media",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "mentions",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "messageId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "platform",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "postedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "quotePostId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "reactions",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "replies",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "replyCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "replyTo",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "repostCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "tags",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "threadId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "user",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "userId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "viewCount",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "visibility",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/social-media-post-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/social-media-post-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/social-media-post",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "accessMethod",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "accessedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "archiveUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "authenticity",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "author",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "credibility",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "hashAlgorithm",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "independence",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "kind",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "language",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "license",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locator",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "medium",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "metadata",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "notes",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "organization",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "page",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "publishedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "publisher",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "query",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "quote",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "reliability",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "requestId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "responseStatus",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "retrievedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "section",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sensor",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "sourceId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "uri",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/source-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/source-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/source",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "actor",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "breadth",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "delay",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "depth",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "excludedSources",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "hypotheses",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "inScope",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "maxDepth",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "nextRunAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "objectives",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "options",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "outOfScope",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "preferredSources",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "priority",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "query",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recurrence",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "recurring",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "requiredDtypes",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "researchQuestion",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "scopeType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "score",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "seedIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "selectionReason",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "sourceIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "targetId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "targetType",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/target-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/target-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/target",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "assigneeIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "completedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dueAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "instructions",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "priority",
+          "required": false,
+          "type": "decimal"
+        },
+        {
+          "name": "resultIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "subjectIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "taskType",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/task-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/task-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/task",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "capturedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contentHash",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contentType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "forms",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "fragment",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "headers",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "host",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "links",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "path",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "port",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "query",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "redirectChain",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "scheme",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "statusCode",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "technologies",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "title",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/url-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/url-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/url",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "bio",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "contactIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "country",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "displayName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "dissolvedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "eid",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "etype",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "externalIds",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "formerNames",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "foundedAt",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "imageUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "jurisdiction",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "legalName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "locationIds",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "logoUrl",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "misc",
+          "required": false,
+          "type": {
+            "list": "map"
+          }
+        },
+        {
+          "name": "name",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "platform",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "shortName",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "status",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "username",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "website",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/user-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/user-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/user",
+      "persistence": "persistent"
+    },
+    {
+      "fields": [
+        {
+          "name": "profileVersion",
+          "required": false,
+          "type": "org.starintel/document@0/actor-config-profile-version"
+        },
+        {
+          "name": "tenantId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "actorId",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "enabled",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "actorGroup",
+          "required": false,
+          "type": "org.starintel/document@0/actor-group"
+        },
+        {
+          "name": "profileTargets",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "hashtagTargets",
+          "required": false,
+          "type": {
+            "list": "string"
+          }
+        },
+        {
+          "name": "credentialRef",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "oneRun",
+          "required": false,
+          "type": "boolean"
+        },
+        {
+          "name": "maxRuns",
+          "required": false,
+          "type": "integer"
+        },
+        {
+          "name": "schedule",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "parameters",
+          "required": false,
+          "type": "map"
+        },
+        {
+          "name": "createdBy",
+          "required": false,
+          "type": "string"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/actor-config-data",
+      "persistence": "transient"
+    },
+    {
+      "extends": "org.starintel/document@0/starintel-document",
+      "fields": [
+        {
+          "name": "data",
+          "required": false,
+          "type": "org.starintel/document@0/actor-config-data"
+        }
+      ],
+      "kind": "document",
+      "name": "org.starintel/document@0/actor-config",
+      "persistence": "persistent"
+    }
+  ],
+  "wireVersion": 1
+}

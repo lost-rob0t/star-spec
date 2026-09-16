@@ -1,0 +1,38 @@
+name: Spec CI
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  generated-and-compatible:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 -m pip install --requirement requirements-dev.txt
+      - run: make check test
+
+  official-starlang:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - uses: actions/checkout@v4
+        with:
+          repository: lost-rob0t/star-lang
+          ref: d320172e42ddc4448da0334fc67c8b7bd6a001e5
+          path: star-lang
+      - name: Compile with the pinned official StarLang compiler
+        run: |
+          nix develop ./star-lang --command bash -c \
+            'export CL_SOURCE_REGISTRY="$PWD/star-lang//"; sbcl --script tools/compile_manifest.lisp spec/starintel-doc-v0.9.1.2.star > /tmp/official-manifest.json'
+          python3 tools/check_official_manifest.py \
+            /tmp/official-manifest.json \
+            generated/0.9.1.2/starintel-doc-v0.9.1.2.manifest.json
