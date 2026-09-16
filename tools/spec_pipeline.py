@@ -255,9 +255,12 @@ def portable_manifest(source: str) -> dict:
             imports.append({"digest": opts[":digest"], "kind": "import", "name": name, "version": opts[":version"]})
         else:
             raise ValueError(f"unsupported declaration: {kind}")
+    library_manifest = {"name": library, "version": header[":version"]}
+    if ":digest" in header:
+        library_manifest["digest"] = header[":digest"]
     return {
         "actors": [], "imports": imports,
-        "library": {"digest": header.get(":digest"), "name": library, "version": header[":version"]},
+        "library": library_manifest,
         "messages": [], "predicates": [], "types": result_types, "wireVersion": 1,
     }
 

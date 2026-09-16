@@ -72,6 +72,7 @@ class SpecPipelineTest(unittest.TestCase):
 
     def test_portable_manifest_preserves_field_markers(self):
         manifest = PIPELINE.portable_manifest(PIPELINE.SOURCE.read_text())
+        self.assertNotIn("digest", manifest["library"])
         actor_config = next(
             item for item in manifest["types"]
             if item["name"].endswith("/actor-config-data")

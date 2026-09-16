@@ -2,7 +2,6 @@
   "actors": [],
   "imports": [],
   "library": {
-    "digest": null,
     "name": "org.starintel/document@0",
     "version": "0.9.1.2"
   },
