@@ -29,7 +29,7 @@
       "fields": [
         {
           "name": "id",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -58,17 +58,17 @@
         },
         {
           "name": "dataset",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
           "name": "dateAdded",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
           "name": "dateUpdated",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -78,12 +78,12 @@
         },
         {
           "name": "dtype",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
           "name": "evidence",
-          "required": false,
+          "required": true,
           "type": {
             "list": "map"
           }
@@ -165,12 +165,12 @@
         },
         {
           "name": "schemaVersion",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
           "name": "sources",
-          "required": false,
+          "required": true,
           "type": {
             "list": "map"
           }
@@ -209,7 +209,7 @@
         },
         {
           "name": "version",
-          "required": false,
+          "required": true,
           "type": "integer"
         },
         {
@@ -307,7 +307,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/actor-manifest-data"
         }
       ],
@@ -429,7 +429,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/address-data"
         }
       ],
@@ -493,7 +493,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/alert-data"
         }
       ],
@@ -594,7 +594,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/analysis-data"
         }
       ],
@@ -766,7 +766,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/asset-data"
         }
       ],
@@ -833,7 +833,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/breach-data"
         }
       ],
@@ -972,7 +972,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/campaign-finance-data"
         }
       ],
@@ -994,7 +994,7 @@
         },
         {
           "name": "claim",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -1058,7 +1058,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/claim-data"
         }
       ],
@@ -1128,7 +1128,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/concept-data"
         }
       ],
@@ -1295,7 +1295,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/contract-data"
         }
       ],
@@ -1388,7 +1388,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/dataset-manifest-data"
         }
       ],
@@ -1407,7 +1407,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/document-data"
         }
       ],
@@ -1436,7 +1436,7 @@
         },
         {
           "name": "domain",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -1512,7 +1512,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/domain-data"
         }
       ],
@@ -1574,7 +1574,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/education-data"
         }
       ],
@@ -1586,7 +1586,7 @@
       "fields": [
         {
           "name": "address",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -1659,7 +1659,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/email-data"
         }
       ],
@@ -1825,7 +1825,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/email-message-data"
         }
       ],
@@ -1890,7 +1890,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/employment-data"
         }
       ],
@@ -2018,7 +2018,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/entity-data"
         }
       ],
@@ -2159,7 +2159,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/event-data"
         }
       ],
@@ -2312,7 +2312,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/evidence-record-data"
         }
       ],
@@ -2382,7 +2382,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/file-data"
         }
       ],
@@ -2491,7 +2491,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/financial-observation-data"
         }
       ],
@@ -2613,7 +2613,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/geo-data"
         }
       ],
@@ -2807,7 +2807,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/grant-data"
         }
       ],
@@ -2965,7 +2965,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/host-data"
         }
       ],
@@ -3124,7 +3124,7 @@
         },
         {
           "name": "target",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -3147,7 +3147,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/investigation-target-data"
         }
       ],
@@ -3266,7 +3266,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/legal-case-data"
         }
       ],
@@ -3374,7 +3374,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/lobbying-filing-data"
         }
       ],
@@ -3496,7 +3496,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/location-data"
         }
       ],
@@ -3568,7 +3568,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/media-data"
         }
       ],
@@ -3709,7 +3709,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/meeting-data"
         }
       ],
@@ -3827,7 +3827,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/message-data"
         }
       ],
@@ -3925,7 +3925,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/network-data"
         }
       ],
@@ -3985,7 +3985,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/observation-data"
         }
       ],
@@ -4025,7 +4025,7 @@
         },
         {
           "name": "mission",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -4044,7 +4044,7 @@
         },
         {
           "name": "phases",
-          "required": false,
+          "required": true,
           "type": {
             "list": "map"
           }
@@ -4058,7 +4058,7 @@
         },
         {
           "name": "status",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -4081,7 +4081,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/operation-data"
         }
       ],
@@ -4387,7 +4387,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/org-data"
         }
       ],
@@ -4452,7 +4452,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/ownership-data"
         }
       ],
@@ -4740,7 +4740,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/person-data"
         }
       ],
@@ -4782,7 +4782,7 @@
         },
         {
           "name": "number",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -4830,7 +4830,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/phone-data"
         }
       ],
@@ -4902,7 +4902,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/policy-data"
         }
       ],
@@ -5069,7 +5069,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/procurement-data"
         }
       ],
@@ -5277,7 +5277,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/product-data"
         }
       ],
@@ -5319,12 +5319,12 @@
         },
         {
           "name": "object",
-          "required": false,
+          "required": true,
           "type": "map"
         },
         {
           "name": "predicate",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -5349,7 +5349,7 @@
         },
         {
           "name": "subject",
-          "required": false,
+          "required": true,
           "type": "map"
         },
         {
@@ -5372,7 +5372,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/relation-data"
         }
       ],
@@ -5473,7 +5473,7 @@
         },
         {
           "name": "objective",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -5502,7 +5502,7 @@
         },
         {
           "name": "status",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -5527,7 +5527,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/research-node-data"
         }
       ],
@@ -5631,7 +5631,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/research-pass-data"
         }
       ],
@@ -5798,7 +5798,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/social-media-post-data"
         }
       ],
@@ -5993,7 +5993,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/source-data"
         }
       ],
@@ -6152,7 +6152,7 @@
         },
         {
           "name": "target",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
@@ -6175,7 +6175,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/target-data"
         }
       ],
@@ -6246,7 +6246,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/task-data"
         }
       ],
@@ -6351,7 +6351,7 @@
         },
         {
           "name": "url",
-          "required": false,
+          "required": true,
           "type": "string"
         }
       ],
@@ -6364,7 +6364,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/url-data"
         }
       ],
@@ -6514,7 +6514,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/user-data"
         }
       ],
@@ -6526,27 +6526,27 @@
       "fields": [
         {
           "name": "profileVersion",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/actor-config-profile-version"
         },
         {
           "name": "tenantId",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
           "name": "actorId",
-          "required": false,
+          "required": true,
           "type": "string"
         },
         {
           "name": "enabled",
-          "required": false,
+          "required": true,
           "type": "boolean"
         },
         {
           "name": "actorGroup",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/actor-group"
         },
         {
@@ -6603,7 +6603,7 @@
       "fields": [
         {
           "name": "data",
-          "required": false,
+          "required": true,
           "type": "org.starintel/document@0/actor-config-data"
         }
       ],

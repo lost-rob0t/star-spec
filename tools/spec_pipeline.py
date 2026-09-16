@@ -239,7 +239,11 @@ def portable_manifest(source: str) -> dict:
             if ":extends" in opts:
                 item["extends"] = portable_type(opts[":extends"], library, local_types)
             for field in declaration[3:]:
-                field_opts = field[3:]
+                # A field is `(name type :required|:optional ...)`; markers
+                # begin immediately after the two positional values.  Starting
+                # at index 3 silently dropped the marker and made every field
+                # optional in the bootstrap manifest, diverging from StarLang.
+                field_opts = field[2:]
                 item["fields"].append({
                     "name": field[0],
                     "required": ":required" in field_opts,

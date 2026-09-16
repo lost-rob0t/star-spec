@@ -70,6 +70,16 @@ class SpecPipelineTest(unittest.TestCase):
         self.assertTrue(set(base["properties"]["dtype"]["enum"]).issubset(names))
         self.assertIn("actor-config", names)
 
+    def test_portable_manifest_preserves_field_markers(self):
+        manifest = PIPELINE.portable_manifest(PIPELINE.SOURCE.read_text())
+        actor_config = next(
+            item for item in manifest["types"]
+            if item["name"].endswith("/actor-config-data")
+        )
+        fields = {field["name"]: field for field in actor_config["fields"]}
+        self.assertTrue(fields["tenantId"]["required"])
+        self.assertFalse(fields["credentialRef"]["required"])
+
 
 if __name__ == "__main__":
     unittest.main()
