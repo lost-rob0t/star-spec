@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "star": "https://starintel.actor/ns#",
+    "geojson": "https://purl.org/geojson/vocab#"
+  },
+  "@id": "star:projection:example-001",
+  "@type": "star:GeoProjection",
+  "star:document": {
+    "@id": "star:document:person-example"
+  },
+  "star:anchor": {
+    "@id": "star:place:building-example"
+  },
+  "star:participationKind": "anchored",
+  "star:geometrySource": "explicit_relation",
+  "star:relationPath": [
+    {
+      "@id": "star:document:person-example"
+    },
+    {
+      "@id": "star:relation:associated-with"
+    },
+    {
+      "@id": "star:place:building-example"
+    }
+  ],
+  "star:geometry": {
+    "type": "Point",
+    "coordinates": [
+      -82.9988,
+      39.9612
+    ]
+  },
+  "star:geometryAccuracyMeters": 25,
+  "star:confidence": 0.91,
+  "star:validFrom": "2026-09-19T00:00:00Z",
+  "star:validTo": null,
+  "star:evidence": [
+    {
+      "@id": "star:evidence:example-001"
+    }
+  ],
+  "star:ruleProfile": "geo-explicit-v1",
+  "star:canonicalGeometry": false,
+  "star:projectionOnly": true
+}

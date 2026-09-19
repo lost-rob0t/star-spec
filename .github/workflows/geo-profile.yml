@@ -1,0 +1,29 @@
+name: Geo profile conformance
+
+on:
+  pull_request:
+    paths:
+      - "spec/geo/**"
+      - "tests/test_geo_profile.py"
+      - ".github/workflows/geo-profile.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "spec/geo/**"
+      - "tests/test_geo_profile.py"
+      - ".github/workflows/geo-profile.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  geo-profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Geo profile contract
+        run: python3 -m unittest discover -s tests -p 'test_geo_profile.py' -v
