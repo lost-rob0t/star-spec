@@ -1,0 +1,54 @@
+{
+  "profileId": "starintel.geo",
+  "profileVersion": "1.0.0-draft.1",
+  "parentRelease": "0.9.1.2",
+  "status": "draft",
+  "normativeDocument": "spec/geo/starintel-geo-v1.md",
+  "semanticAuthority": "canonical-starintel-documents",
+  "projectionAuthority": false,
+  "geometryModels": [
+    "Point",
+    "MultiPoint",
+    "LineString",
+    "MultiLineString",
+    "Polygon",
+    "MultiPolygon",
+    "GeometryCollection"
+  ],
+  "participationKinds": [
+    "direct",
+    "anchored",
+    "derived"
+  ],
+  "requiredCapabilities": [
+    "geo.read",
+    "geo.query",
+    "geo.layers.read",
+    "geo.provenance.read"
+  ],
+  "optionalCapabilities": [
+    "geo.layers.write",
+    "geo.offline.export",
+    "geo.tak.publish",
+    "geo.xr.render",
+    "geo.derived.expand"
+  ],
+  "transports": [
+    "HTTP",
+    "WebSocket",
+    "SSE",
+    "MVT",
+    "PMTiles",
+    "GeoJSON",
+    "JSON-LD",
+    "CoT"
+  ],
+  "conformanceSuites": [
+    "projection",
+    "provenance",
+    "temporal",
+    "authorization",
+    "offline",
+    "rendering-contract"
+  ]
+}
